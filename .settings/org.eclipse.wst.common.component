@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?><project-modules id="moduleCoreId" project-version="1.5.0">
+    <wb-module deploy-name="meslap-pure">
+        <wb-resource deploy-path="/WEB-INF/classes" source-path="/src"/>
+        <wb-resource deploy-path="/" source-path="/webapp"/>
+        <property name="java-output-path" value="/meslap-pure/build/classes"/>
+        <property name="context-root" value="meslap-pure"/>
+    </wb-module>
+</project-modules>
