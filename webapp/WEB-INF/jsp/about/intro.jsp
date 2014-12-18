@@ -19,7 +19,7 @@
     </map>
 </div>
 <div class="line_1px"></div>
-<div class="content" style="heigth:600px">
+<div class="content" style="height:350px">
 	교회소개 페이지는 현재 공사중입니다 ^^
 </div>
 <jsp:include page="../include/common_bottom.jsp"></jsp:include>

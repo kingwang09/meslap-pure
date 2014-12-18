@@ -682,7 +682,7 @@ div.worship-content{
 	padding-top:25px;
 }
 pre.worship{
-	 font-family: 'Nanum Barun Gothic';
+	font-family: 'Nanum Barun Gothic';
 	padding:0;
 	margin:0;
 	backgroud-color:none;
@@ -703,4 +703,7 @@ div.gospel-body{
 
 div.gray-border{
 	border:1px solid #e7e7e7
+}
+a{
+	color:black;
 }

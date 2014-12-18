@@ -2,25 +2,6 @@ package org.jesus.meslap.board.dao.impl;
 
 import java.util.Date;
 import java.util.List;
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 import org.hibernate.Criteria;
 import org.hibernate.Query;
 import org.hibernate.Session;

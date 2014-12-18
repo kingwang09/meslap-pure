@@ -77,15 +77,15 @@ public class BoardServiceImpl implements BoardService {
 //				fos.write(temp);
 //			}//for
 		} catch (IllegalStateException e) {
-			e.printStackTrace();
+			log.error("IllegalStateException : "+e.getMessage());
 		} catch (IOException e) {
-			e.printStackTrace();
+			log.error("IOException : "+e.getMessage());
 		} finally{
 			try {
 				if(fos!=null)
 					fos.close();
 			} catch (IOException e) {
-				e.printStackTrace();
+				log.error("Close IOException : "+e.getMessage());
 			}
 		}
 	}
