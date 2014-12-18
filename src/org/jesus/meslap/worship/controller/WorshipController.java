@@ -58,7 +58,7 @@ public class WorshipController {
 	public ModelAndView adminWrite(HttpServletRequest req,HttpServletResponse resp){
 		ModelAndView mav = new ModelAndView();
 		List<String> categorys = wService.getCateogrys();
-		mav.setViewName("/worship/write");
+		mav.setViewName("/worship/font/write");
 		mav.addObject("categorys", categorys);
 		return mav;
 	}
@@ -77,7 +77,7 @@ public class WorshipController {
 		ModelAndView mav = new ModelAndView();
 		Worship worship = wService.getWorship(id);
 		List<String> categorys = wService.getCateogrys();
-		mav.setViewName("/worship/update");
+		mav.setViewName("/worship/font/update");
 		mav.addObject("worship",worship);
 		mav.addObject("categorys", categorys);
 		return mav;

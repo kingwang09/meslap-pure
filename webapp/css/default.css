@@ -700,3 +700,7 @@ div.gospel-body{
 	padding-left:25px;
 	padding-left:45px;
 }
+
+div.gray-border{
+	border:1px solid #e7e7e7
+}
