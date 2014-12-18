@@ -21,7 +21,6 @@ import java.util.List;
 
 
 
-import org.apache.xmlbeans.impl.xb.xsdschema.RestrictionDocument.Restriction;
 import org.hibernate.Criteria;
 import org.hibernate.Query;
 import org.hibernate.Session;

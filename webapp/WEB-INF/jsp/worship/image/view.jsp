@@ -4,7 +4,7 @@
 <!DOCTYPE html>
 <html lang="ko">
 <head>
-    <jsp:include page="../include/common_include.jsp"></jsp:include>    
+    <jsp:include page="../../include/common_include.jsp"></jsp:include>    
     <script>
         $(document).ready(function(){
            //$(".media").on("mouseenter",function(){
@@ -43,7 +43,7 @@
     </script>
 </head>
 <body>
-	<jsp:include page="../include/menu_include.jsp"></jsp:include>
+	<jsp:include page="../../include/menu_include.jsp"></jsp:include>
 
 <div class="subTitle">
 	<img src="${cp}/images/worship/worship_submenu01.jpg" usemap="#worship_sub_map"/>
@@ -135,6 +135,6 @@
 -->
 
 
-<jsp:include page="../include/common_bottom.jsp"></jsp:include>
+<jsp:include page="../../include/common_bottom.jsp"></jsp:include>
 </body>
 </html>
