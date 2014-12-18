@@ -1,6 +1,6 @@
 <%@ page language="java" contentType="text/html; charset=UTF-8" pageEncoding="UTF-8"%>
 <%@ taglib uri="http://java.sun.com/jsp/jstl/core" prefix="c" %> 
-<%String cp = request.getContextPath(); %>
+<c:set var="cp" value="${pageContext.request.contextPath}" scope="request"></c:set>
 <!DOCTYPE html>
 <html lang="ko">
 <head>
@@ -17,9 +17,9 @@
 
             $("#juboBtn").magnificPopup({
                     items:[
-                        {src:'<%=cp%>/worshipFiles/${worship.juboFileName01}'},
-                        {src:'<%=cp%>/worshipFiles/${worship.juboFileName02}'},
-                        {src:'<%=cp%>/worshipFiles/${worship.juboFileName03}'}
+                        {src:'${cp}/worshipFiles/${worship.juboFileName01}'},
+                        {src:'${cp}/worshipFiles/${worship.juboFileName02}'},
+                        {src:'${cp}/worshipFiles/${worship.juboFileName03}'}
                     ],
                     gallery:{
                         enabled:true
@@ -46,15 +46,15 @@
 	<jsp:include page="../../include/menu_include.jsp"></jsp:include>
 
 <div class="subTitle">
-	<img src="<%=cp %>/images/worship/worship_submenu01.jpg" usemap="#worship_sub_map"/>
+	<img src="${cp}/images/worship/worship_submenu01.jpg" usemap="#worship_sub_map"/>
 	<map name="worship_sub_map">
-    	<area shape="rect" coords="0,56,61,76" href="<%=cp %>/worship/view.do" alt="replay_movie">
-        <area shape="rect" coords="67,56,151,76" href="<%=cp %>/board/bibleStudy/list.do" alt="replay_movie">
+    	<area shape="rect" coords="0,56,61,76" href="${cp}/worship/view.do" alt="말씀">
+        <area shape="rect" coords="67,56,151,76" href="${cp}/board/bibleStudy/list.do" alt="성경공부자료">
     </map>
 </div>
 <div class="line_1px"></div>
 <div class="worship-content">
-	<form id="worshipForm" name="worshipForm" action="<%=cp%>/worship/view.do">
+	<form id="worshipForm" name="worshipForm" action="${cp}/worship/view.do">
 		<input type="hidden" name="id" value="${worship.id}" />
 		<input type="hidden" name="cPage" value="${cPage}" />
 	</form>
@@ -64,8 +64,8 @@
 		
 	</div>
 	<div class="worship-body-right">
-		<a href="javascript:viewPage('${worship.id-1}','${recentWorshipId+1 }')" style="padding-right:30px"><img src="<%=cp%>/images/worship/left.jpg" /></a>
-		<a href="javascript:viewPage('${worship.id+1}','${recentWorshipId+1 }')"><img src="<%=cp%>/images/worship/right.jpg" /></a>
+		<a href="javascript:viewPage('${worship.id-1}','${recentWorshipId+1 }')" style="padding-right:30px"><img src="${cp}/images/worship/left.jpg" /></a>
+		<a href="javascript:viewPage('${worship.id+1}','${recentWorshipId+1 }')"><img src="${cp}/images/worship/right.jpg" /></a>
 		<div style="padding-top:34px">
 			<div class="h4"><b>${worship.title}</b></div> <!-- Title 말씀제목 -->
 			<div class="h5"><b>${worship.bibleIndex}</b></div> <!-- sub 말씀구절 -->
@@ -78,12 +78,12 @@
 		</div>
 		<div style="padding-top:25px">
 			<c:if test="${!empty worship.audioFileName}">
-             <a href="<%=cp%>/worship/download.do?fileName=${worship.audioFileName}"><img class="hoverImages" imgName="top_bt_audio" src="<%=cp%>/images/main/top_bt_audio.jpg"/></a>
+             <a href="${cp}/worship/download.do?fileName=${worship.audioFileName}"><img class="hoverImages" imgName="top_bt_audio" src="${cp}/images/main/top_bt_audio.jpg"/></a>
             </c:if>
             <c:if test="${!empty worship.textFileName}">
-             <a href="<%=cp%>/worship/download.do?fileName=${worship.textFileName}"><img class="hoverImages" imgName="top_bt_ebook" src="<%=cp%>/images/main/top_bt_ebook.jpg"/></a>
+             <a href="${cp}/worship/download.do?fileName=${worship.textFileName}"><img class="hoverImages" imgName="top_bt_ebook" src="${cp}/images/main/top_bt_ebook.jpg"/></a>
             </c:if>
-             <a href="#" id="juboBtn"><img class="hoverImages" imgName="top_bt_paper" src="<%=cp%>/images/main/top_bt_paper.jpg" /></a>
+             <a href="#" id="juboBtn"><img class="hoverImages" imgName="top_bt_paper" src="${cp}/images/main/top_bt_paper.jpg" /></a>
          </div>
 	</div>
   	
@@ -97,7 +97,7 @@
     
 </div>
 <!-- iFrame start-->
-<iframe src="<%=cp%>/worship/insideView.do?cPage=${cPage}" width="100%" height="780px" frameborder="no"></iframe>
+<iframe src="${cp}/worship/insideView.do?cPage=${cPage}" width="100%" height="780px" frameborder="no"></iframe>
 <!-- iFrame start-->
 
 

@@ -2,7 +2,8 @@
     pageEncoding="UTF-8" import="org.jesus.meslap.entity.User"%>
 <%@ taglib uri="http://java.sun.com/jsp/jstl/core" prefix="c" %> 
 <c:set var="cp" value="${pageContext.request.contextPath}" scope="request"></c:set>
-<html>
+<!DOCTYPE html>
+<html lang="ko">
 <head>
 <jsp:include page="../include/common_include.jsp"></jsp:include>
 <script>

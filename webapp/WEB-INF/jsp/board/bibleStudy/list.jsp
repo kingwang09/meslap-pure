@@ -2,7 +2,8 @@
     pageEncoding="UTF-8" import="org.jesus.meslap.entity.User"%>
 <%@ taglib uri="http://java.sun.com/jsp/jstl/core" prefix="c" %> 
 <c:set var="cp" value="${pageContext.request.contextPath}" scope="request"></c:set>
-<html>
+<!DOCTYPE html>
+<html lang="ko">
 <head>
 <jsp:include page="../../include/common_include.jsp"></jsp:include>
 <script>
@@ -37,8 +38,8 @@ function deleteBoard(boardCode, id){
 <div class="subTitle">
 	<img src="${cp }/images/worship/worship_submenu02.jpg" usemap="#worship_sub_map"/>
 	<map name="worship_sub_map">
-    	<area shape="rect" coords="0,56,61,76" href="${cp}/worship/view.do" alt="replay_movie">
-        <area shape="rect" coords="67,56,151,76" href="${cp}/board/bibleStudy/list.do" alt="replay_movie">
+    	<area shape="rect" coords="0,56,61,76" href="${cp}/worship/view.do" alt="말씀">
+        <area shape="rect" coords="67,56,151,76" href="${cp}/board/bibleStudy/list.do" alt="성경공부자료">    
     </map>
 </div>
 <div class="line_1px"></div>

@@ -1,13 +1,13 @@
 <%@ page language="java" contentType="text/html; charset=UTF-8" pageEncoding="UTF-8"%>
 <%@ taglib uri="http://java.sun.com/jsp/jstl/core" prefix="c" %> 
-<%String cp = request.getContextPath(); %>
+<c:set var="cp" value="${pageContext.request.contextPath}" scope="request"></c:set>
 <!DOCTYPE html>
 <html lang="ko">
 <head>
 <jsp:include page="../include/common_include.jsp"></jsp:include>
 <script>
 function goList(){
-	location.href="<%=cp%>/worship/admin/list.do";
+	location.href="${cp}/worship/admin/list.do";
 }
 function doSubmit(){
 	var form = document.worshipForm;
@@ -20,7 +20,7 @@ function doSubmit(){
 <jsp:include page="../include/menu_include.jsp"></jsp:include>
 <br/>
 <div class="content">
-	<form action="<%=cp %>/worship/admin/write.do" id="worshipForm" name="worshipForm" method="post" enctype="multipart/form-data" class="form-horizontal" role="form">
+	<form action="${cp}/worship/admin/write.do" id="worshipForm" name="worshipForm" method="post" enctype="multipart/form-data" class="form-horizontal" role="form">
 		<div style="border:1px solid #e7e7e7">
 		<div class="h4">메인 화면 이미지</div>
 		<div class="form-group">
@@ -159,7 +159,7 @@ function doSubmit(){
 			<input type="button" value="미리보기" class="btn btn-default btn-xs" />
 			&nbsp;
 			 -->
-			<a href="<%=cp %>/worship/admin/list.do" class="btn btn-default btn-xs">
+			<a href="${cp}/worship/admin/list.do" class="btn btn-default btn-xs">
 				<i class="fa fa-th-list"></i> 목록으로
 			</a>
 		</div>

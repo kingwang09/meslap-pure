@@ -32,12 +32,4 @@ public class MainController {
 		mav.setViewName("/main");
 		return mav;
 	}
-	
-	@RequestMapping(value="/news.do")
-	public ModelAndView newsView(HttpServletRequest req,HttpServletResponse resp){
-		log.debug("MainController - news Method!!");
-		ModelAndView mav = new ModelAndView();
-		mav.setViewName("/news");
-		return mav;
-	}
 }
