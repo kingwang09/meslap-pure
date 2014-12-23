@@ -120,6 +120,9 @@ public class WorshipController {
 		
 		if(id!=null){
 			Worship worship = wService.getWorship(id);
+			String tempTitle = worship.getTitle();
+			tempTitle = tempTitle.replace("\r\n", "<br/>");
+			worship.setTitle(tempTitle);
 			mav.addObject("worship", worship);
 		}
 		

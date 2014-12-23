@@ -60,31 +60,31 @@ function doSubmit(){
 			<div class="form-group">
 				<label for="title" class="col-sm-2 control-label">설교 제목</label>
 				<div class="col-sm-10">
-					<textarea name="title" id="title" class="form-control" style="width:100%;height:300px"></textarea>
+					<textarea name="title" id="title" class="form-control" style="width:100%;height:50px"></textarea>
 				</div>
 			</div>
 			<div class="form-group">
 				<label for="bibleIndex" class="col-sm-2 control-label">본문 말씀 구절</label>
 				<div class="col-sm-10">
-					<textarea name="bibleIndex" id="bibleIndex" class="form-control" style="width:100%;height:300px"></textarea>
+					<textarea name="bibleIndex" id="bibleIndex" class="form-control" style="width:100%;height:50px"></textarea>
 				</div>
 			</div>
 			<div class="form-group">
 				<label for="bible" class="col-sm-2 control-label">본문 말씀</label>
 				<div class="col-sm-10">
-					<textarea name="bible" id="bible" class="form-control" style="width:100%;height:300px"></textarea>
+					<textarea name="bible" id="bible" class="form-control" style="width:100%;height:150px"></textarea>
 				</div>
 			</div>
 			<div class="form-group">
 				<label for="recitationBibleIndex" class="col-sm-2 control-label">암송 말씀 구절</label>
 				<div class="col-sm-10">
-					<textarea name="recitationBibleIndex" id="recitationBibleIndex" class="form-control" style="width:100%;height:300px"></textarea>
+					<textarea name="recitationBibleIndex" id="recitationBibleIndex" class="form-control" style="width:100%;height:50px"></textarea>
 				</div>
 			</div>
 			<div class="form-group">
 				<label for="recitationBible" class="col-sm-2 control-label">암송 말씀</label>
 				<div class="col-sm-10">
-					<textarea name="recitationBible" id="recitationBible" class="form-control" style="width:100%;height:300px"></textarea>
+					<textarea name="recitationBible" id="recitationBible" class="form-control" style="width:100%;height:150px"></textarea>
 				</div>
 			</div>
 			<div class="form-group">
@@ -124,9 +124,15 @@ function doSubmit(){
 					<input type="file" name="juboFile03" class="form-control"/><br/>
 				</div>
 			</div>
+			<div class="form-group">
+				<label for="videoImage" class="col-sm-2 control-label">등록날짜</label>
+				<div class="col-sm-10">
+					<div class="input-group date">
+					  <input type="text" name="wdate" class="form-control"><span class="input-group-addon"><i class="glyphicon glyphicon-th"></i></span>
+					</div>
+				</div>
+			</div>
 		</div>
-		
-		 
 		<div style="text-algin:center">
 			<a href="javascript:doSubmit();" class="btn btn-default btn-xs">
 				<i class="fa fa-floppy-o"></i> 등록 완료

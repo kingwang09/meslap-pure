@@ -62,31 +62,31 @@ function doSubmit(){
 			<div class="form-group">
 				<label for="title" class="col-sm-2 control-label">설교 제목</label>
 				<div class="col-sm-10">
-					<textarea name="title" id="title" class="form-control" style="width:100%;height:300px">${worship.title }</textarea>
+					<textarea name="title" id="title" class="form-control" style="width:100%;height:50px">${worship.title }</textarea>
 				</div>
 			</div>
 			<div class="form-group">
 				<label for="bibleIndex" class="col-sm-2 control-label">본문 말씀 구절</label>
 				<div class="col-sm-10">
-					<textarea name="bibleIndex" id="bibleIndex" class="form-control" style="width:100%;height:300px">${worship.bibleIndex }</textarea>
+					<textarea name="bibleIndex" id="bibleIndex" class="form-control" style="width:100%;height:50px">${worship.bibleIndex }</textarea>
 				</div>
 			</div>
 			<div class="form-group">
 				<label for="bible" class="col-sm-2 control-label">본문 말씀</label>
 				<div class="col-sm-10">
-					<textarea name="bible" id="bible" class="form-control" style="width:100%;height:300px">${worship.bible }</textarea>
+					<textarea name="bible" id="bible" class="form-control" style="width:100%;height:150px">${worship.bible }</textarea>
 				</div>
 			</div>
 			<div class="form-group">
 				<label for="recitationBibleIndex" class="col-sm-2 control-label">암송 말씀 구절</label>
 				<div class="col-sm-10">
-					<textarea name="recitationBibleIndex" id="recitationBibleIndex" class="form-control" style="width:100%;height:300px">${worship.recitationBibleIndex }</textarea>
+					<textarea name="recitationBibleIndex" id="recitationBibleIndex" class="form-control" style="width:100%;height:50px">${worship.recitationBibleIndex }</textarea>
 				</div>
 			</div>
 			<div class="form-group">
 				<label for="recitationBible" class="col-sm-2 control-label">암송 말씀</label>
 				<div class="col-sm-10">
-					<textarea name="recitationBible" id="recitationBible" class="form-control" style="width:100%;height:300px">${worship.recitationBible }</textarea>
+					<textarea name="recitationBible" id="recitationBible" class="form-control" style="width:100%;height:150px">${worship.recitationBible }</textarea>
 				</div>
 			</div>
 			<div class="form-group">

@@ -9,6 +9,7 @@
 <!-- Latest compiled and minified CSS -->
 <link rel="stylesheet" href="${cp}/frameworks/bootstrap/css/bootstrap-theme.css">
 <link rel="stylesheet" href="${cp}/frameworks/bootstrap/css/bootstrap.css">
+<link rel="stylesheet" href="${cp}/frameworks/bootstrap/css/datepicker3.css">
 <link rel="stylesheet" href="${cp}/frameworks/fontawsome/css/font-awesome.css">
 <link rel="stylesheet" href="${cp}/frameworks/jquery-magnific/magnific-popup.css">
 <link rel="stylesheet" href="${cp}/frameworks/sweet-alert/sweet-alert.css">
@@ -17,6 +18,8 @@
 <!-- Latest compiled and minified JavaScript -->
 <script src="${cp}/frameworks/jquery/jquery-1.11.1.js"></script>
 <script src="${cp}/frameworks/bootstrap/js/bootstrap.js"></script>
+<script src="${cp}/frameworks/bootstrap/js/bootstrap-datepicker.js"></script>
+<script src="${cp}/frameworks/bootstrap/js/locales/bootstrap-datepicker.kr.js"></script>
 <script src="${cp}/frameworks/jquery-magnific/jquery.magnific-popup.js"></script>
 <script src="${cp}/frameworks/sweet-alert/sweet-alert.min.js"></script>
 <!-- include/common_include.jsp end --> 
@@ -28,3 +31,13 @@
     	text-align:center
     }
 </style>
+<script>
+$(document).ready(function(){
+	console.log($(".input-group.date"));
+	$(".input-group.date").datepicker({
+	    format: "yyyy-mm-dd",
+	    language: "kr",
+	    todayHighlight: true
+	});	
+});
+</script>

@@ -693,6 +693,16 @@ pre.worship{
 	line-height: 2;font-size: 13px;
 		
 }
+pre.worshipTitle{
+	font-family: 'Nanum Barun Gothic Bold';
+	padding:0;
+	margin:0;
+	backgroud-color:none;
+	border:none;
+	overflow:visible;
+	word-wrap:normal;
+	background-color:white;
+}
 
 div.gospel-body{
 	width:892px;
