@@ -7,7 +7,7 @@
     <jsp:include page="./include/common_include.jsp"></jsp:include>
   <script>
   function popupMobileAudio(){
-	  window.open('http://www.meslap.com/mobile/sermon.htm', 'audio', 'height=600px,width=385px');
+	  window.open('${cp}/sermon.htm', 'audio', 'height=600px,width=385px');
   }
   </script>
 </head>

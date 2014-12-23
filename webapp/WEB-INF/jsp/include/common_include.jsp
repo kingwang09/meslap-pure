@@ -6,6 +6,7 @@
 <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
 <title>Meslap: Message For Love And Peace</title>
 <meta name="viewport" content="width=device-width">
+<link rel="shortcut icon" href="http://meslap.com/image/meslap_img.ico"/>
 <!-- Latest compiled and minified CSS -->
 <link rel="stylesheet" href="${cp}/frameworks/bootstrap/css/bootstrap-theme.css">
 <link rel="stylesheet" href="${cp}/frameworks/bootstrap/css/bootstrap.css">
