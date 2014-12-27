@@ -18,20 +18,19 @@
 <div class="line_1px"></div>
 <div class="content">
 	<div>
-		<img src="${cp}/images/mission/ministry_txt.jpg" />
-	</div>
-	<!-- 
-	<div style="float:left">
-		<video width="320" height="240" controls>
-		  <source src="${cp}/videos/awana_video.mp4">
-			Your browser does not support the video tag.
-		</video>
-	</div>
-	 -->
-	<div>
-		<img src="${cp}/images/mission/right_box.jpg" />
+		<img src="${cp}/images/mission/intro.jpg" />
 	</div>
 </div>
+<div style="margin:0 auto;width:864px">
+	<div style="float:left">
+		<iframe width="703" height="395" src="//www.youtube.com/embed/Z9YikT4rQyk" frameborder="0" allowfullscreen></iframe>
+	</div> 
+	<div>
+		<img src="${cp}/images/mission/right_box.jpg" />
+	
+	</div>
+</div>
+<br/>
 <jsp:include page="../include/common_bottom.jsp"></jsp:include>
 </body>
 </html>

@@ -128,7 +128,7 @@ function doSubmit(){
 				<label for="videoImage" class="col-sm-2 control-label">등록날짜</label>
 				<div class="col-sm-10">
 					<div class="input-group date">
-					  <input type="text" name="wdate" class="form-control"><span class="input-group-addon"><i class="glyphicon glyphicon-th"></i></span>
+					  <input type="text" name="worshipDate" class="form-control"><span class="input-group-addon"><i class="glyphicon glyphicon-th"></i></span>
 					</div>
 				</div>
 			</div>

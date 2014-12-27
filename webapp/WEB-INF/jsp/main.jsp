@@ -25,7 +25,7 @@
  <div class="carousel-inner">
      <div class="item active">
      	 <div style="width:100%;text-align:center">
-         	<img src="${cp}/images/main/main_slide01.jpg" alt="..." style="height:409px;">
+         	<img src="${cp}/images/main/banner_20141228_01.jpg" alt="...">
          </div>
          <div class="carousel-caption">
 
@@ -33,25 +33,27 @@
      </div>
      <div class="item">
          <div style="width:100%;text-align:center">
-         	<img src="${cp}/images/main/main_slide02.jpg" alt="..." style="height:409px;">
+         	<img src="${cp}/images/main/banner_20141228_02.jpg" alt="..." >
          </div>
          <div class="carousel-caption">
          </div>
      </div>
      <div class="item">
          <div style="width:100%;text-align:center">
-         	<img src="${cp}/images/main/main_slide03.jpg" alt="..." style="height:409px;">
+         	<img src="${cp}/images/main/banner_20141228_03.jpg" alt="..." >
          </div>
          <div class="carousel-caption">
          </div>
      </div>
+     <!-- 
      <div class="item">
          <div style="width:100%;text-align:center">
-         	<img src="${cp}/images/main_banner_1.jpg" alt="..." style="height:409px;">
+         	<img src="${cp}/images/main_banner_1.jpg" alt="..." >
          </div>
          <div class="carousel-caption">
          </div>
      </div>
+      -->
  </div>
 
  <!-- Controls
@@ -99,10 +101,14 @@
 	            <img src="${cp}/worshipFiles/${recentWorship.mainVideoImageFileName}" />
 	        </a>
 	        
-	        <img src="${cp}/images/replay.gif" alt="Replay" usemap="#replay_map">
+	        <img src="${cp}/images/main/youtube_audio.jpg" alt="Replay" usemap="#replay_map">
 	        <map name="replay_map">
+	        	<!-- 
 	            <area shape="rect" coords="17,16,240,65" href="http://www.youtube.com/channel/UCXUHra_EuT3T2vD8j3BDuJQ" alt="replay_movie">
 	            <area shape="rect" coords="251,16,473,65" href="javascript:popupMobileAudio()" alt="replay_audio">
+	             -->
+	            <area shape="rect" coords="17,42,239,92" href="http://www.youtube.com/channel/UCXUHra_EuT3T2vD8j3BDuJQ" alt="replay_movie">
+	            <area shape="rect" coords="249,42,472,92" href="javascript:popupMobileAudio()" alt="replay_audio">
 	        </map>
 		</div>
 		<div class="sub-banner-body-right">

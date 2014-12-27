@@ -162,6 +162,10 @@ public class Worship {
 	@Getter @Setter
 	private Date wdate;
 	
+	@Transient
+	@Getter @Setter
+	private String worshipDate;
+	
 	/**
 	 * Title Image <NotUsed>
 	 */

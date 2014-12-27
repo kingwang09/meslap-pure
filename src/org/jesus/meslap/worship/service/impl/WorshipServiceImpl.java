@@ -111,12 +111,21 @@ public class WorshipServiceImpl implements WorshipService {
 			MultipartFile titleWorship = worship.getTitleWorshipFile();
 			worship.setTitleWorshipFileName(writeFile(path, titleWorship));
 			
-			worship.setWdate(new Date());
+			String worshipDate = worship.getWorshipDate();
+			if(worshipDate!=null){
+				SimpleDateFormat sdf = new SimpleDateFormat("yyyy-MM-dd");
+				Date date = sdf.parse(worshipDate);
+				worship.setWdate(date);
+			}else{
+				worship.setWdate(new Date());
+			}
 			worshipDao.save(worship);
 		} catch (IllegalStateException e) {
 			log.error("WorshipService.write Error 01. \n"+e.getMessage());
 		} catch (IOException e) {
 			log.error("WorshipService.write Error 02. \n"+e.getMessage());
+		} catch (ParseException e) {
+			log.error("WorshipService.write Error 03. \n"+e.getMessage());
 		}
 	}
 	

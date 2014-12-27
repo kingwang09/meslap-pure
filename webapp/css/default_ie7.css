@@ -1,0 +1,14 @@
+ul.pagination{
+	list-style: none;
+	text-align: right;
+}
+li{
+	float:left;
+	padding-left:10px;
+	padding-right:10px;
+}
+.ie7-wrapper{
+  width: 1000px;
+  padding: 0px;
+  margin: 0 auto;
+}

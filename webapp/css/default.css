@@ -31,7 +31,8 @@ body {
 }
 
 h1, h2, h3, h4, h5, h6 {
-  font-family: 'Nanum Barun Gothic Bold';
+  /*font-family: 'Nanum Barun Gothic Bold';*/
+  font-family: 'Nanum Barun Gothic';
   margin: 0;
   font-weight: inherit;
   font-style: inherit;
@@ -694,7 +695,8 @@ pre.worship{
 		
 }
 pre.worshipTitle{
-	font-family: 'Nanum Barun Gothic Bold';
+	/*font-family: 'Nanum Barun Gothic Bold';*/
+	font-family: 'Nanum Barun Gothic';
 	padding:0;
 	margin:0;
 	backgroud-color:none;

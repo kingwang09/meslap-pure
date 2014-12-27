@@ -97,7 +97,9 @@
     
 </div>
 <!-- iFrame start-->
+<div class="ie7-wrapper">
 <iframe src="${cp}/worship/insideView.do?cPage=${cPage}" width="100%" height="780px" frameborder="no"></iframe>
+</div>
 <!-- iFrame start-->
 
 

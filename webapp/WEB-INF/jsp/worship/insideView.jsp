@@ -56,7 +56,12 @@ function goPage(page){
     <c:forEach var="w" items="${worships}">
     	<div class="media" style="border:1px solid #e7e7e7">
 	         <a class="pull-left" href="#">
-	             <img class="media-object img-rounded" src="${cp}/images/worship/video1.jpg" />
+	         	<c:if test="${empty w.videoImageFileName }">
+	             <img class="media-object" src="${cp}/images/worship/default_video.jpg" />
+	         	</c:if>
+	         	<c:if test="${!empty w.videoImageFileName }">
+	         		<img class="media-object" src="${cp}/worshipFiles/${w.videoImageFileName}" />
+	         	</c:if>
 	         </a>
 	         <div class="media-body" style="padding-left:25px;padding-top:25px">
 	             <div class="h5 media-heading"><b><a href="javascript:viewPage('${w.id }')">${w.title}</a></b>

@@ -49,7 +49,7 @@ $(document).ready(function(){
 <!-- Meslap Logo -->
 <div class="wrapper">
 	<div class="site-navigation-item">
-	    <a href="${cp}/index.do"><img src="${cp}/images/main/meslap_logo.jpg" alt="Meslap Logo" /></a>
+	    <a href="${cp}/index.do"><img src="${cp}/images/main/logo.jpg" alt="Meslap Logo" /></a>
 	</div>
 	<!-- About Meslap -->
 	<div class="site-navigation-item site-navigation-about-meslap" style="padding-left:60px">

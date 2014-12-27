@@ -15,6 +15,9 @@
 <link rel="stylesheet" href="${cp}/frameworks/jquery-magnific/magnific-popup.css">
 <link rel="stylesheet" href="${cp}/frameworks/sweet-alert/sweet-alert.css">
 <link rel="stylesheet" type="text/css" href="${cp}/css/default.css?v=1">
+<!--[if lte IE 7]>
+<link rel="stylesheet" type="text/css" href="${cp}/css/default_ie7.css" />
+<![endif]-->
 
 <!-- Latest compiled and minified JavaScript -->
 <script src="${cp}/frameworks/jquery/jquery-1.11.1.js"></script>
