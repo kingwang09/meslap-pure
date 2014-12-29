@@ -2,7 +2,7 @@ ul.pagination{
 	list-style: none;
 	text-align: right;
 }
-li{
+ul.pagination li{
 	float:left;
 	padding-left:10px;
 	padding-right:10px;

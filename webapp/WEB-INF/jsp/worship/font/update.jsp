@@ -20,7 +20,8 @@ function doSubmit(){
 <jsp:include page="../../include/menu_include.jsp"></jsp:include>
 <br/>
 <div class="content">
-	<form action="${cp}/worship/admin/write.do" id="worshipForm" name="worshipForm" method="post" enctype="multipart/form-data" class="form-horizontal" role="form">
+	<form action="${cp}/worship/admin/update.do" id="worshipForm" name="worshipForm" method="post" enctype="multipart/form-data" class="form-horizontal" role="form">
+		<input type="hidden" name="id" value="${worship.id }" />
 		<div class="gray-border">
 			<div class="h4">메인 화면 이미지</div>
 			<div class="form-group">
@@ -134,6 +135,14 @@ function doSubmit(){
 					${worship.juboFileName02},<br/> 
 					${worship.juboFileName03}.<br/> 
 					파일을 선택하실 경우, 새로운 파일로 대체 됩니다.</span>
+				</div>
+			</div>
+			<div class="form-group">
+				<label for="videoImage" class="col-sm-2 control-label">등록날짜</label>
+				<div class="col-sm-10">
+					<div class="input-group date">
+					  <input type="text" name="worshipDate" class="form-control" value="${worship.wdateStr }"><span class="input-group-addon"><i class="glyphicon glyphicon-th"></i></span>
+					</div>
 				</div>
 			</div>
 		</div>

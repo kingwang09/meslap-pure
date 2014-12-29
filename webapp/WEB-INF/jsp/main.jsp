@@ -70,7 +70,7 @@
  <!-- 메인 배너 하단 메뉴 - 1st --> 
  	<ul class="init-ul">
  		<li class="init-li">
- 			<a href="${cp}/about/gospel.do" style="padding-right:10px">
+ 			<a href="${cp}/about/intro.do" style="padding-right:10px">
 				<img src="${cp}/images/body_menu_about_meslap.gif" alt="AboutMeslap" />
 			</a>
  		</li>

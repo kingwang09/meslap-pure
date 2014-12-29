@@ -72,7 +72,7 @@
 			<small>${worship.wdateStr}</small>     <!-- 날짜 -->
 		</div>
 		<div style="padding-top:25px">
-			<div class="h5" style="width:100px;background-color:rgb(74, 104, 255);color:white;font-size:16px;height:25px">한송 암송구절</div>
+			<div class="h5" style="width:95px;background-color:#5a7296;color:white;font-size:16px;height:20px">한송 암송구절</div>
             <p style="word-wrap: break-word;">${worship.recitationBible}</p>
             ${worship.recitationBibleIndex}
 		</div>

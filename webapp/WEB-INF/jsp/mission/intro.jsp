@@ -21,8 +21,8 @@
 		<img src="${cp}/images/mission/intro.jpg" />
 	</div>
 </div>
-<div style="margin:0 auto;width:864px">
-	<div style="float:left">
+<div style="margin:0 auto;width:889px"><!-- 864 -->
+	<div style="float:left;padding-right:25px">
 		<iframe width="703" height="395" src="//www.youtube.com/embed/Z9YikT4rQyk" frameborder="0" allowfullscreen></iframe>
 	</div> 
 	<div>

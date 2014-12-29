@@ -168,13 +168,23 @@ public class WorshipServiceImpl implements WorshipService {
 			worship.setSubWorshipFileName(updateFile(path, worship.getSubWorshipFile(), beforeWorship.getSubWorshipFileName()));
 			worship.setTitleWorshipFileName(updateFile(path, worship.getTitleWorshipFile(), beforeWorship.getTitleWorshipFileName()));
 			
-			worship.setWdate(new Date());
+			//worship.setWdate(new Date());
+			String worshipDate = worship.getWorshipDate();
+			if(worshipDate!=null){
+				SimpleDateFormat sdf = new SimpleDateFormat("yyyy-MM-dd");
+				Date date = sdf.parse(worshipDate);
+				worship.setWdate(date);
+			}else{
+				worship.setWdate(new Date());
+			}
 			//worshipDao.save(worship);
 			worshipDao.merge(worship);
 		} catch (IllegalStateException e) {
 			log.error("WorshipService.write Error 01. \n"+e.getMessage());
 		} catch (IOException e) {
 			log.error("WorshipService.write Error 02. \n"+e.getMessage());
+		} catch (ParseException e) {
+			log.error("WorshipService.write Error 03. \n"+e.getMessage());
 		}
 	}
 	
@@ -257,6 +267,8 @@ public class WorshipServiceImpl implements WorshipService {
 						worship.setCategory(value);
 						break;
 					case TITLE_IDX :
+						if(value==null || "".equals(value))
+							continue;
 						worship.setTitle(value);
 						break;
 					case BIBLE_INDEX_IDX :

@@ -20,7 +20,7 @@
 </div>
 <div class="line_1px"></div>
 <div class="content">
-	<img src="${cp}/images/about/about_time.jpg" />
+	<img src="${cp}/images/about/church_time.jpg" />
 </div>
 
 <jsp:include page="../include/common_bottom.jsp"></jsp:include>
