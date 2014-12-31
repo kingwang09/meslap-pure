@@ -109,7 +109,7 @@ $(document).ready(function(){
 	<div class="site-navigation-item site-navigation-email">
 	</div>
 	-->
-	<img class="hoverImages" src="${cp}/images/main/mail.jpg" imgName="mail" ext="jpg" style="padding-right:13px"/>
+	<a href="mailto:meslaphelper@naver.com"><img class="hoverImages" src="${cp}/images/main/mail.jpg" imgName="mail" ext="jpg" style="padding-right:13px"/></a>
 	<a href="https://www.facebook.com/meslap3" target="_new"><img class="hoverImages" src="${cp}/images/main/facebook.jpg" imgName="facebook" ext="jpg" style="padding-right:13px"/></a>
 	<!-- kakao music 
 	<div class="site-navigation-item site-navigation-kakaomusic">
