@@ -14,15 +14,15 @@
 <div class="content" style="text-align:left">
 	<div class="panel panel-default">
 	  <div class="panel-heading">
-	  	<h4>
+	  	<h3>
 	  		<c:if test="${!empty board.category }">
 	  			<small>[${board.category }]</small>
 	  		</c:if>
 	  		${board.title }
-	  	</h4>
+	  	</h3>
 	  </div>
 	  <div class="panel-body">
-	    <pre style="height:400px" class="boardContent">${board.content}</pre>
+	    <pre style="min-height:400px" class="boardContent">${board.content}</pre>
 	    <div style="text-align:right">
 	    	<c:if test="${!empty board.fileName }">
 	    	<span>
