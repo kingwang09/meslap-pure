@@ -13,16 +13,25 @@
 <br/>
 <div class="content" style="text-align:left">
 	<div class="panel panel-default">
-	  <div class="panel-heading"><small>[${board.category }]</small> ${board.title }</div>
+	  <div class="panel-heading">
+	  	<h4>
+	  		<c:if test="${!empty board.category }">
+	  			<small>[${board.category }]</small>
+	  		</c:if>
+	  		${board.title }
+	  	</h4>
+	  </div>
 	  <div class="panel-body">
-	    <pre style="height:400px">${board.content}</pre>
+	    <pre style="height:400px" class="boardContent">${board.content}</pre>
 	    <div style="text-align:right">
+	    	<c:if test="${!empty board.fileName }">
 	    	<span>
 	    		<a href="${cp}/board/${boardCode}/${board.id}/download.do?filePath=${board.filePath}&fileName=${board.fileName}" title="${board.filePath}">
 	    		<i class="fa fa-file-archive-o"></i> <!-- 확장자에따라 아이콘 변경. -->
 	    		${board.fileName}
 	    		</a>
 	    	</span>
+	    	</c:if>
 	    	<small>${board.wdateStr} - ${board.writer }</small>
 	    </div>
 	  </div>

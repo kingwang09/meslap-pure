@@ -719,3 +719,16 @@ div.gray-border{
 a{
 	color:black;
 }
+
+pre.boardContent{
+	font-family: 'Nanum Barun Gothic';
+	padding:0;
+	margin:0;
+	backgroud-color:none;
+	border:none;
+	overflow:visible;
+	word-wrap:break-word;
+	background-color:white;
+	line-height: 2;font-size: 13px;
+		
+}
