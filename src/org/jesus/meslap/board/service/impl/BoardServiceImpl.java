@@ -92,7 +92,7 @@ public class BoardServiceImpl implements BoardService {
 	
 	@Transactional(value="transactionManager")
 	public void updateBoard(Board board){
-		board.setMdate(new Date());
+		board.setWdate(new Date());
 		boardDao.saveBoard(board);
 	}
 
