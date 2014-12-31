@@ -41,9 +41,11 @@ public class Board implements Serializable{
 	private String boardCode;
 	
 	@Getter @Setter
+	@Column(length=1000)
 	private String title;
 	
 	@Getter @Setter
+	@Column(length=2000)
 	private String content;
 	
 	@Getter @Setter
