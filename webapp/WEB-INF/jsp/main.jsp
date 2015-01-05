@@ -31,6 +31,7 @@
 
          </div>
      </div>
+     <!-- 
      <div class="item">
          <div style="width:100%;text-align:center">
          	<img src="${cp}/images/main/banner_20141228_02.jpg" alt="..." >
@@ -38,6 +39,7 @@
          <div class="carousel-caption">
          </div>
      </div>
+      -->
      <div class="item">
          <div style="width:100%;text-align:center">
          	<img src="${cp}/images/main/banner_20141228_03.jpg" alt="..." >
@@ -101,14 +103,15 @@
 	            <img src="${cp}/worshipFiles/${recentWorship.mainVideoImageFileName}" />
 	        </a>
 	        
-	        <img src="${cp}/images/main/youtube_audio.jpg" alt="Replay" usemap="#replay_map">
+	        <img src="${cp}/images/main/main_link.jpg" alt="Replay" usemap="#replay_map">
 	        <map name="replay_map">
 	        	<!-- 
-	            <area shape="rect" coords="17,16,240,65" href="http://www.youtube.com/channel/UCXUHra_EuT3T2vD8j3BDuJQ" alt="replay_movie">
-	            <area shape="rect" coords="251,16,473,65" href="javascript:popupMobileAudio()" alt="replay_audio">
-	             -->
 	            <area shape="rect" coords="17,42,239,92" href="http://www.youtube.com/channel/UCXUHra_EuT3T2vD8j3BDuJQ" alt="replay_movie">
 	            <area shape="rect" coords="249,42,472,92" href="javascript:popupMobileAudio()" alt="replay_audio">
+	             -->
+	            <area shape="rect" coords="14,46,158,94" href="http://www.youtube.com/channel/UCXUHra_EuT3T2vD8j3BDuJQ" alt="replay_movie">
+	            <area shape="rect" coords="174,46,308,94" href="javascript:popupMobileAudio()" alt="replay_audio">
+	            <area shape="rect" coords="322,46,476,94" href="http://www.cts.tv/progsm2/index.asp?PID=P264&DPID=46750&Order=" alt="cts_link">
 	        </map>
 		</div>
 		<div class="sub-banner-body-right">
