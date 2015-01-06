@@ -25,7 +25,9 @@
  <div class="carousel-inner">
      <div class="item active">
      	 <div style="width:100%;text-align:center">
+     	 	<a href="http://meslap.com/board/notice/35/view.do">
          	<img src="${cp}/images/main/banner_20141228_01.jpg" alt="...">
+         	</a>
          </div>
          <div class="carousel-caption">
 
@@ -42,7 +44,9 @@
       -->
      <div class="item">
          <div style="width:100%;text-align:center">
+         	<a href="http://meslap.com/board/notice/37/view.do">
          	<img src="${cp}/images/main/banner_20141228_03.jpg" alt="..." >
+         	</a>
          </div>
          <div class="carousel-caption">
          </div>
