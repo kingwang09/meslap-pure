@@ -96,7 +96,7 @@ public class WorshipServiceImpl implements WorshipService {
 			worship.setJuboFileName01(writeFile(path, juboFile01));
 			
 			MultipartFile juboFile02 = worship.getJuboFile02();
-			worship.setJuboFileName01(writeFile(path, juboFile02));
+			worship.setJuboFileName02(writeFile(path, juboFile02));
 			
 			MultipartFile juboFile03 = worship.getJuboFile03();
 			worship.setJuboFileName03(writeFile(path, juboFile03));
@@ -331,5 +331,6 @@ public class WorshipServiceImpl implements WorshipService {
 	public List<String> getCateogrys() {
 		return worshipDao.getCategorys();
 	}
+
 
 }

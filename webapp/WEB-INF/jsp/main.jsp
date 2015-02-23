@@ -17,7 +17,7 @@
  <!-- Indicators -->
  <ol class="carousel-indicators">
      <li data-target="#carousel-example-generic" data-slide-to="0" class="active"></li>
-     <li data-target="#carousel-example-generic" data-slide-to="1"></li>
+     <!-- <li data-target="#carousel-example-generic" data-slide-to="1"></li>  -->
  </ol>
 
  <!-- Wrapper for slides -->
@@ -41,6 +41,7 @@
          </div>
      </div>
       -->
+      <!--  
      <div class="item">
          <div style="width:100%;text-align:center">
          	<a href="http://meslap.com/board/notice/37/view.do">
@@ -50,6 +51,7 @@
          <div class="carousel-caption">
          </div>
      </div>
+     -->
      <!-- 
      <div class="item">
          <div style="width:100%;text-align:center">

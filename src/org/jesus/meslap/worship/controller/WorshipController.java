@@ -58,8 +58,10 @@ public class WorshipController {
 	public ModelAndView adminWrite(HttpServletRequest req,HttpServletResponse resp){
 		ModelAndView mav = new ModelAndView();
 		List<String> categorys = wService.getCateogrys();
+		Integer maxId = wService.getRecentWorshipId();
 		mav.setViewName("/worship/font/write");
 		mav.addObject("categorys", categorys);
+		mav.addObject("worshipId", maxId.intValue()+1);
 		return mav;
 	}
 	

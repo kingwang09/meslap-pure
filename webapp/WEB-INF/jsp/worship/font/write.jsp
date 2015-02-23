@@ -24,6 +24,12 @@ function doSubmit(){
 		<div class="gray-border">
 			<div class="h4">메인 화면 이미지</div>
 			<div class="form-group">
+				<label for="id" class="col-sm-2 control-label">ID</label>
+				<div class="col-sm-10">
+					<input type="text" name="id" id="id" class="form-control" value="${worshipId}"/>
+				</div>
+			</div>
+			<div class="form-group">
 				<label for="mainBibleImage" class="col-sm-2 control-label">메인 암송 말씀 이미지</label>
 				<div class="col-sm-10">
 					<input type="file" name="mainBibleImage" id="mainBibleImage" class="form-control"/>

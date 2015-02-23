@@ -23,7 +23,7 @@ public class Worship {
 	public static final String WORSHIP_IMPORT_FOLDER = "worshipImport";
 	
 	@Id
-	@GeneratedValue(strategy=GenerationType.AUTO)
+	//@GeneratedValue(strategy=GenerationType.AUTO)
 	@Getter @Setter
 	private Integer id;
 	
