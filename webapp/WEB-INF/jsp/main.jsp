@@ -7,7 +7,7 @@
     <jsp:include page="./include/common_include.jsp"></jsp:include>
   <script>
   function popupMobileAudio(){
-	  window.open('${cp}/sermon.htm', 'audio', 'height=600px,width=385px');
+	  window.open('${cp}/mobile/sermon.htm', 'audio', 'height=600px,width=385px');
   }
   </script>
 </head>
@@ -24,8 +24,8 @@
  <div class="carousel-inner">
      <div class="item active">
      	 <div style="width:100%;text-align:center">
-     	 	<a href="http://meslap.com/board/notice/35/view.do">
-         	<img src="${cp}/images/main/banner_20141228_01.jpg" alt="...">
+     	 	<a href="http://meslap.com/board/notice/39/view.do">
+         	<img src="${cp}/images/main/20150322_main_banner.jpg" alt="...">
          	</a>
          </div>
          <div class="carousel-caption">
